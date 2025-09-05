@@ -44,8 +44,10 @@ const Modulos = () => {
   const handleModuleSelect = (moduloId: string) => {
     if (moduloId === "programacao") {
       navigate("/disciplinas")
+    } else if (moduloId === "comissionamento") {
+      navigate("/comissionamento")
     } else {
-      // Para os outros módulos, mostrar em breve
+      // Para outros módulos, mostrar em breve
       alert(`Módulo ${moduloId} em desenvolvimento`)
     }
   }

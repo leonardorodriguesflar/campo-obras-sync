@@ -11,6 +11,7 @@ import Modulos from "./pages/Modulos";
 import Disciplinas from "./pages/Disciplinas";
 import FolhasServico from "./pages/FolhasServico";
 import DetalhamentoFS from "./pages/DetalhamentoFS";
+import Comissionamento from "./pages/Comissionamento";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/disciplinas" element={<Disciplinas />} />
           <Route path="/folhas-servico" element={<FolhasServico />} />
           <Route path="/detalhamento" element={<DetalhamentoFS />} />
+          <Route path="/comissionamento" element={<Comissionamento />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
